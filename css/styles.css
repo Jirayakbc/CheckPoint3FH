@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import "node_modules/bootstrap/scss/bootstrap";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* .navbar-brand{
+      color: red;
+      text-shadow: 10px;
+      font-size: 2rem;
+  }
+
+  .navbar-brand:hover{
+      color: silver;
+      font-size: 2rem;
+  } */
+
+  header{
+      height: 100%;
+      background: teal;
+  }
+  .banner{
+      padding-top: 0px;
+      position: relative;
+      display: block;
+      text-align: center;
+  }

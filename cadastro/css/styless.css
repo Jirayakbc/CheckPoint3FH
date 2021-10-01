@@ -1,0 +1,177 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display: grid;
+  background: linear-gradient(to right, #c9d6ff, #e2e2e2);
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 15% 60% 10%;
+  grid-template-areas:
+    "cabecalho cabecalho cabecalho"
+    "lateral1 formulario lateral2"
+    "barra-inferior barra-inferior barra-inferior";
+}
+
+.cabecalho {
+  grid-area: cabecalho;
+  display: flex;
+  justify-content: center;
+}
+
+.lateral1 {
+  grid-area: lateral1;
+}
+.formulario {
+  grid-area: formulario;
+}
+
+.lateral2 {
+  grid-area: lateral2;
+}
+.barra-inferior {
+  grid-area: barra-inferior;
+}
+
+h1 {
+  text-align: center;
+  margin: auto auto;
+}
+
+#espaco-formulario {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 1em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.input-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.2em;
+}
+
+label {
+  padding: 0.1em;
+}
+
+input[type="text"] {
+  width: 60%;
+  border-radius: 6px;
+  height: 1.6em;
+  text-align: center;
+  background-color: rgba(250, 250, 250, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.7);
+}
+input[type="text"]:hover {
+  width: 80%;
+  border-radius: 6px;
+  transform: scale(1.05);
+  transition: all 0.3s ease-out;
+  background-color: rgba(250, 250, 250, 0.6);
+}
+input[type="text"]:focus {
+  width: 80%;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+  background-color: rgba(250, 250, 250, 0.6);
+}
+input[type="tel"] {
+  width: 60%;
+  border-radius: 6px;
+  height: 1.6em;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  background-color: rgba(250, 250, 250, 0.8);
+}
+input[type="tel"]:hover {
+  width: 80%;
+  border-radius: 6px;
+  transform: scale(1.05);
+  transition: all 0.3s ease-out;
+  background-color: rgba(250, 250, 250, 0.6);
+}
+input[type="tel"]:focus {
+  width: 80%;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+  background-color: rgba(250, 250, 250, 0.6);
+}
+input[type="date"] {
+  width: 60%;
+  height: 1.8em;
+  border-radius: 6px;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  background-color: rgba(250, 250, 250, 0.8);
+}
+input[type="date"]:hover {
+  width: 80%;
+  border-radius: 6px;
+  transform: scale(1.05);
+  transition: all 0.3s ease-out;
+  background-color: rgba(250, 250, 250, 0.6);
+}
+input[type="date"]:focus {
+  width: 80%;
+  border-radius: 6px;
+  transition: all 0.3s ease-out;
+  background-color: rgba(250, 250, 250, 0.6);
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.form-botoes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.botoes-idade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5em 0em;
+}
+
+.input-botao {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  padding: 0.1em 0em;
+}
+
+label {
+  color: rgba(0, 0, 0, 0.801);
+}
+label:hover {
+  font-weight: bold;
+}
+
+.cont-fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+fieldset {
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  padding: 0.5em;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.espaco-fieldset {
+  height: 0.5em;
+}
