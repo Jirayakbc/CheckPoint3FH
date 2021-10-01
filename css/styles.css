@@ -13,7 +13,7 @@
     font-family: 'Roboto', sans-serif;
   }
 
-  /* .navbar-brand{
+  .navbar-brand{
       color: red;
       text-shadow: 10px;
       font-size: 2rem;
@@ -22,7 +22,7 @@
   .navbar-brand:hover{
       color: silver;
       font-size: 2rem;
-  } */
+  }
 
   header{
       height: 100%;
